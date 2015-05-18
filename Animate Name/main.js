@@ -3,9 +3,11 @@ var orange = [40, 100, 60];
 var green = [75, 100, 40];
 var blue = [196, 77, 55];
 var purple = [280, 50, 60];
+var yellow = [40, 100, 60];
+var gray = [0, 5, 50];
 
 var myName = "Carlos";
-var letterColors = [red, orange, green]
+var letterColors = [red, orange, green, blue, gray, yellow]
 if(10 < 3) {
     bubbleShape ="square";
 }
