@@ -1,0 +1,4 @@
+function tryEmail(email){
+var html = document.getElementById("Email")
+html.value = email
+}
