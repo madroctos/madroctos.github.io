@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+ 
+ 
+  <script id='name' type='text/ractive'>
+    <p>Hello, {{name}}!</p>
+    <p>{{name}} has been chosen to become our adventures hero<p>
+  </script>
+ 
+ 
+  <script id='quest' type='text/ractive'>
+    
+  </script>
+ 
+ 
+ 
+<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+    
+<script type="text/javascript">
+    value = prompt("Whats Your Name?")
+    
+  var ractive = new Ractive({
+    // The `el` option can be a node, an ID, or a CSS selector.
+    el: 'body',
+    template: '#name',
+    data: { name: value }
+      
+  });
+
+function page2(){
+    value1 = prompt("Would You Like To Continue With This Quest?")
+    
+  var ractive = new Ractive({
+    // The `el` option can be a node, an ID, or a CSS selector.
+    el: 'body',
+    template: '#quest',
+    data: { name: value,  }
+  });
+}
+
+</script>
+ 
+ 
+ 
+ 
+</body>
+</html>
