@@ -7,7 +7,13 @@
  
   <script id='name' type='text/ractive'>
     <p>Hello, {{name}}!</p>
-    <p>{{name}} has been chosen to become our adventures hero<p>
+    <p>{{name}} has been chosen to become our adventures hero</p>
+    <h4>Would You Like To Continue With This Quest {{name}}?</h4>
+    Your Answer:
+    <input type="text" value="{{answer}}"/>
+    <p>{{answer}}</p>
+    
+    
   </script>
  
  
@@ -20,8 +26,8 @@
 <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
     
 <script type="text/javascript">
-    value = prompt("Whats Your Name?")
-    
+    //value = prompt("Whats Your Name?")
+    value = 'Carlos'
   var ractive = new Ractive({
     // The `el` option can be a node, an ID, or a CSS selector.
     el: 'body',
